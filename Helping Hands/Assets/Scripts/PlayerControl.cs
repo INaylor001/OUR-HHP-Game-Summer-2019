@@ -29,6 +29,8 @@ public class PlayerControl : MonoBehaviour
 
     //private Collider2D myCollider;
 
+    private Animator myAnimator;
+
     private Rigidbody2D myRigidBody;
 
     public GameManager theGameManager; 
@@ -39,6 +41,8 @@ public class PlayerControl : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody2D>();
 
         //myCollider = GetComponent<Collider2D>();
+
+        myAnimator = GetComponent<Animator>();
 
         jumpTimeCounter = jumpTime;
 
@@ -78,6 +82,9 @@ public class PlayerControl : MonoBehaviour
                 myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
             }
         }
+
+        myAnimator.SetFloat("Speed", myRigidBody.velocity.x);
+        myAnimator.SetBool("Grounded", grounded);
 
         if (Input.GetKey(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
