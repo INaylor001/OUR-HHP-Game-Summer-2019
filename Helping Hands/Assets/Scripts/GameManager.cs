@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     private PlatformDestroyer[] platformList;
 
     private ScoreManager theScoreManager;
+    private ItemManager theItemManager;
+
+    public string nextLevel;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +24,7 @@ public class GameManager : MonoBehaviour
         playerStartPoint = thePlayer.transform.position;
 
         theScoreManager = FindObjectOfType<ScoreManager>();
-
+        theItemManager = FindObjectOfType<ItemManager>();
 
     }
 
@@ -54,5 +57,22 @@ public class GameManager : MonoBehaviour
 
         theScoreManager.scoreCount = 0;
         theScoreManager.scoreIncreasing = true;
+
+        theItemManager.SetItemCount(0);
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+        
+    }
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+    }
+    public void NextLevel(string nextLev)
+    {
+        //Application.LoadLevel(newLev);
+        Debug.Log("Next Level!");
     }
 }
