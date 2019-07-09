@@ -477,6 +477,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemText: {fileID: 7595150}
   itemCount: 0
+  itemName: Gold
+  total: 10
 --- !u!1 &384371150
 GameObject:
   m_ObjectHideFlags: 0

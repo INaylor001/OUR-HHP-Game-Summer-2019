@@ -10,22 +10,19 @@ public class ItemManager : MonoBehaviour
     public float itemCount;
     public string itemName;
     public float total;
-    private bool allItems;
+    //private bool allItems;
 
     
     // Start is called before the first frame update
     void Start()
     {
-       allItems = false;
+       //allItems = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (itemCount >= total)
-        {
-            allItems = true;
-        }
+
     }
     public void AddItemCount(int itemPoints)
     {

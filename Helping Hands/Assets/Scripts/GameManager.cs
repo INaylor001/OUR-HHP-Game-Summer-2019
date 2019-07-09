@@ -15,8 +15,6 @@ public class GameManager : MonoBehaviour
     private ScoreManager theScoreManager;
     private ItemManager theItemManager;
 
-    public string nextLevel;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -70,9 +68,8 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
     }
-    public void NextLevel(string nextLev)
+    public void NextLevel(int nextLev)
     {
-        //Application.LoadLevel(newLev);
-        Debug.Log("Next Level!");
+        Application.LoadLevel(nextLev);
     }
 }

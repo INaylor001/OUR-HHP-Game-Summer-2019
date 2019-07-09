@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
 
     public bool dialogActive;
 
+
     // Start is called before the first frame update
     void Start()
     {

@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f3c5e237051d641a5323608e25a45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playGameLevel: Endless
+  playGameLevel: 3 Platforms
 --- !u!1 &120403918
 GameObject:
   m_ObjectHideFlags: 0
