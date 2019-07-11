@@ -68,8 +68,10 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
     }
-    public void NextLevel(int nextLev)
+    public IEnumerator NextLevel(int nextLev)
     {
+        float fadeTime = GameObject.Find("GameManager").GetComponent<Fading>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
         Application.LoadLevel(nextLev);
     }
 }

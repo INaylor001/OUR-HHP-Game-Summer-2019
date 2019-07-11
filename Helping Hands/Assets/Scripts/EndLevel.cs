@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EndLevel : MonoBehaviour
 {
@@ -10,13 +11,16 @@ public class EndLevel : MonoBehaviour
     void Start()
     {
         theGameManager = FindObjectOfType<GameManager>();
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == "Player")
         {
-            theGameManager.NextLevel(nextLevel);
+
+            //theGameManager.PauseGame();
+            StartCoroutine(theGameManager.NextLevel(nextLevel));
             Debug.Log("Next Level");
         }
     }

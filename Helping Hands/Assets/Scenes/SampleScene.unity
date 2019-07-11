@@ -254,7 +254,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  speedMultiplier: 0
+  speedIncreaseMilestone: 0
+  speedIncreaseMilestoneStore: 0
   jumpForce: 10
+  jumpTime: 0
+  grounded: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  groundCheck: {fileID: 0}
+  groundCheckRadius: 0
+  theGameManager: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
