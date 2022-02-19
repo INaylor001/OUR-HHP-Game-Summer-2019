@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     private ScoreManager theScoreManager;
     private ItemManager theItemManager;
 
+    public int nextLev;
+
     // Start is called before the first frame update
     void Start()
     {

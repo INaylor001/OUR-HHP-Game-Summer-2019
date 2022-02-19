@@ -11,18 +11,24 @@ public class ItemManager : MonoBehaviour
     public string itemName;
     public float total;
     //private bool allItems;
+    private GameManager theGameManager;
+    public bool collect; //is the level a collectathon
 
     
     // Start is called before the first frame update
     void Start()
     {
-       //allItems = false;
+        //allItems = false;
+        theGameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (itemCount >= total && collect)
+        {
+            StartCoroutine(theGameManager.NextLevel(theGameManager.nextLev));
+        }
     }
     public void AddItemCount(int itemPoints)
     {
