@@ -7,10 +7,10 @@ Play the demo here: https://inaylor001.github.io/SuperNormRun2019_Demo/
 
 2019 Demo Video: https://drive.google.com/file/d/1p8vSpnLsyg71EwdxvASgwdSX1zcpeib0/view?usp=sharing
 
-Controls: 
+**Controls:** 
+- Space to jump
+- Double Tap Space to Double Jump
 
-Space to jump
-Double Tap Space to Double Jump
-
-Modes: Play Game - Tutorial Levels.
-       Endless Mode - Endless! Go for the high score!
+**Modes:**
+- Play Game - Tutorial Levels.
+- Endless Mode - Endless! Go for the high score!
